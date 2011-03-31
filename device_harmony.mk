@@ -44,7 +44,10 @@ PRODUCT_PACKAGES += \
     libreference-cdma-sms
 
 # Use MDPI artwork
-PRODUCT_LOCALES += mdpi
+#PRODUCT_LOCALES += mdpi
+
+# Use HDPI temporarily.
+PRODUCT_LOCALES += hdpi
 
 # VOLD
 PRODUCT_COPY_FILES += \
