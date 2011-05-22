@@ -15,7 +15,8 @@ TARGET_CPU_SMP := true
 TARGET_HAVE_TEGRA_ERRATA_657451 := true
 TARGET_USES_OLD_LIBSENSORS_HAL := true
 TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
-TARGET_USE_SOFTWARE_AUDIO_AAC := true
+TARGET_DONT_SET_AUDIO_AAC_FORMAT := true
+BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # custom recovery ui
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/harmony/recovery/recovery_ui.c
@@ -51,6 +52,9 @@ BOARD_USE_KINETO_COMPATIBILITY := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_NO_RGBX_8888 := true
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
+
+# Use screencap to capture frame buffer for ddms
+BOARD_USE_SCREENCAP := true
 
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
